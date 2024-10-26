@@ -7,7 +7,7 @@ export const WheatherToday = () => {
     return (
         <div>
             <p className='text-xl font-semibold ml-4'>{Math.ceil(data?.current?.temp_c)} Degrees Celsius</p>
-            <p className='text-xl font-semibold ml-4'>{data?.current?.feelslike_c} Degrees</p>
+            <p className='text-xl font-semibold ml-4'>Feels like {Math.ceil(data?.current?.feelslike_c)} </p>
             
         </div>
     )

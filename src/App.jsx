@@ -6,7 +6,7 @@ function App() {
 
   return (
 
-   <div className='container mx-auto'>
+   <div className='md:container md:mx-auto '>
    <AppLayout/>
    </div>
 

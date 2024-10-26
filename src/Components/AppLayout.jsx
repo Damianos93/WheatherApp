@@ -97,7 +97,7 @@ export const AppLayout = () => {
 					<MyContext.Provider value={contextValue}>
 						<NavBar />
 						<WheatherToday />
-						{/* <HourlyForecast /> */}
+						<HourlyForecast />
 						{/* <TenDayForecast /> */}
 					</MyContext.Provider>
 				</div>

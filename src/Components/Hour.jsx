@@ -1,13 +1,14 @@
 import React from 'react'
+import { HourlyItem } from './HourlyItem'
 
 export const Hour = ({item}) => {
   return (
     <div>
-        <p>{item.date}</p>
-        <p>Max Temperature {item.day.maxtemp_c}</p>
-        <p>Min Temperature {item.day.mintemp_c}</p>
-        <p>Winds of maximum {item.day.maxwind_kph} per hour</p>
-        <p>Chance of rain {item.day.daily_chance_of_rain} </p>
+      The Wheather in the next 10 hours 
+        <div className='grid grid-flow-col grid-cols-10 grid-rows-3 gap-4'>{item.hour.slice(0, 10).map((hourlyItem,index)=>(
+          <HourlyItem hourlyItem={hourlyItem} key={index}/>
+        ))}</div>
+   
     </div>
   )
 }

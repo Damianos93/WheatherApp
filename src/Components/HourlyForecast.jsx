@@ -26,7 +26,7 @@ export const HourlyForecast = () => {
         fetchData()
     }, [query])
     return (
-        <div>{hourlydata?.forecast?.forecastday.map((item, index) => (
+        <div>{hourlydata?.forecast?.forecastday?.map((item, index) => (
             <Hour item={item} key={index}/>
             
         ))}</div>
